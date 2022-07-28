@@ -38,11 +38,10 @@ public class Post implements Serializable {
     public Post() {
     }
 
-    public Post(Integer id, String title, String postUrl, String userName, int voteCount, Integer userId, Date postedAt, Date updatedAt, List<Comment> comments) {
+    public Post(Integer id, String title, String postUrl, int voteCount, Integer userId, Date postedAt, Date updatedAt, List<Comment> comments) {
         this.id = id;
         this.title = title;
         this.postUrl = postUrl;
-        this.userName = userName;
         this.voteCount = voteCount;
         this.userId = userId;
     }
